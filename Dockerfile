@@ -3,7 +3,7 @@
 FROM centos:7
 
 #Set the author field for images
-MAINTAINER Aashi Manak Bohara <boharaaashi@gmail.com.com>
+MAINTAINER Aashi Manak Bohara <boharaaashi@gmail.com>
 
 
 # Install Apache: 2.4.x and deltarpm
@@ -50,7 +50,6 @@ EXPOSE 3000
 
 
 # Start mongodb and httpd service
-#CMD httpd -DFOREGROUND
 ENTRYPOINT ["/usr/bin/mongod"]
 CMD ["httpd -DFOREGROUND","--port", "27017", "--dbpath", "/data/mongodb", "--pidfilepath", "/var/run/mongodb/mongod.pid"]
 
