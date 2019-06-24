@@ -3,7 +3,7 @@
 FROM centos:7
 
 #Set the author field for images
-MAINTAINER Aashi Manak Bohara <aashi.b@sarv.com>
+MAINTAINER Aashi Manak Bohara <boharaaashi@gmail.com.com>
 
 
 # Install Apache: 2.4.x and deltarpm
